@@ -52,10 +52,10 @@ extension String.Encoding {
         switch self {
         case .utf8:
             TSInputEncodingUTF8
-        // case .utf16LittleEndian:
-        //     TSInputEncodingUTF16LE
-        // case .utf16BigEndian:
-        //     TSInputEncodingUTF16BE
+        case .utf16LittleEndian:
+            TSInputEncodingUTF16LE
+        case .utf16BigEndian:
+            TSInputEncodingUTF16BE
         default:
             TSInputEncodingUTF8
         }
